@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style>
+		</style>
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!--下拉刷新容器-->
+			<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+			  <div class="mui-scroll">
+				<!--数据列表-->
+				<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								Item 1
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								 Item 2
+							</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right">
+								 Item 3
+							</a>
+						</li>
+					</ul>
+			  </div>
+			</div>
+		</div>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				pullRefresh:{
+					container:"#refreshContainer",
+					down:{
+						height : 50,//可选,默认50.触发下拉刷新拖动距离,
+						range : 50, //可选 默认100px,控件可下拉拖拽的范围
+						color : '#2BD009', //可选，默认“#2BD009” 下拉刷新控件颜色
+						style : 'circle',//可选，下拉刷新样式，目前支持原生5+ ‘circle’ 样式
+						auto : false,//可选,默认false.自动下拉刷新一次
+						callback:doubleref
+					},
+				}
+			});
+			function doubleref()
+			{
+				setTimeout(function(){
+					var table = document.body.querySelector('.mui-table-view');
+					var cell = document.body.querySelectorAll('.mui-table-view-cell');
+					for(var i = cell.length,len = i + 3;i < len;i++)
+					{
+						var lis = document.createElement('li');
+						lis.className = 'mui-table-view-cell mui-media';
+						lis.innerHTML = '这是第' + (i + 1);
+						table.appendChild(lis);
+						mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+					}
+				},1000);
+			}
+		</script>
+	</body>
+
+</html>

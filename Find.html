@@ -1,0 +1,332 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style>
+			html
+			{
+				width: 100%;
+				height: 100%;
+			}
+			.div_piceure
+			{
+				max-width:100%;
+				height: 50px;
+				width: 50px;
+			}
+			.mui-col-xs-4
+			{
+				text-align: center;
+			}
+			.mui-slider .mui-slider-group .mui-slider-item img
+			{
+				width: 50px;
+			}
+			.div_channel_topbox
+			{
+				width: 95%;
+				height: auto;
+				margin: 0 auto;
+			}
+			.div_channel_talkbox
+			{
+				height: auto;
+				width: 95%;
+				margin-left: 2.5%;
+				margin-top: 15px;
+				background-color: white;
+				border-radius: 5px;
+				float: left;
+			}
+			.div_channel_talkbox .mui-table-view .mui-media .div_channel_talkbox_userhead
+			{
+				max-width: 100%;
+				width: 35px;
+				height: 35px;
+				margin-right: 15px;
+				border-radius: 5px;
+			}
+			.div_channel_talkbox_cenbox
+			{
+				width: 100%;
+				height: auto;
+				float: left;
+			}
+			#item3
+			{
+				border-bottom: none;
+			}
+			#item2
+			{
+				border-bottom: none;
+			}
+			#item1
+			{
+				border-bottom: none;
+			}
+			.div_User_Box_Rigth
+			{
+				float: right;
+				margin-top: 5px;
+				background-color:#F0FFFF;
+				width: 70px;
+				height: 30px;
+				border-radius: 5px;
+				text-align: center;
+				line-height: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content"  id="content_div">
+			<div class="mui-slider">
+				<div class="mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+					<a class="mui-control-item" href="#item1">圈子</a>
+					<a class="mui-control-item" href="#item2">频道</a>
+					<a class="mui-control-item" href="#item3">分区</a>
+				</div>
+				<div id="sliderProgressBar" class="mui-slider-progress-bar mui-col-xs-4"></div>
+				<div class="mui-slider-group">
+					<div id="item1" class="mui-slider-item mui-control-content">
+						<ul class="mui-table-view">
+							<li class="mui-table-view-cell">第1000000个选项卡子项</li>
+							<li class="mui-table-view-cell">第1个选项卡子项</li>
+						</ul>
+					</div>
+					<div id="item2" class="mui-slider-item mui-control-content">
+						<!--下拉刷新容器-->
+						<div id="refreshContainer" class="mui-scroll-wrapper" style="margin-top: 15px;">
+							<div class="mui-scroll">
+								<div class="div_channel_topbox">
+									<ul class="mui-table-view" style="border-radius: 5px;">
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;">
+												<img class="mui-media-object mui-pull-left" src="Picture/channel_talk.png">
+												<div class="mui-media-body">
+													<span>发现感兴趣的话题</span>
+													<p style="font-size: 12px;">关注话题，不错过优质内容更新</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="div_channel_talkbox">
+									<ul class="mui-table-view" style="border-radius: 5px;">
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;">
+												<img class="div_channel_talkbox_userhead mui-pull-left" src="User_Head/junshi_head.jpg">
+												<div class="div_User_Box_Rigth">
+													<span style="font-weight: 500;font-size: 20px;color: #007AFF;">+</span><span style="font-weight: 500;color: #007AFF;">&nbsp;&nbsp;关注</span>
+												</div>
+												<div class="mui-media-body">
+													<span style="font-size: 14px;">军事</span>
+													<p style="font-size: 10px;">进一天讨论&nbsp;581</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<div class="div_channel_talkbox_cenbox" style="border-bottom: solid 1px #CCCCCC;">
+										<span style="font-size: 13px;font-weight: 500;margin-left: 15px;">穷则战术穿插，达则给老子炸</span>
+										<p style="font-size: 12px;margin-left: 15px;"><span style="font-weight: 600;font-size: 12px;">一颗青木：</span>作者：远方青木（YFqingmu）中国人民解放</p>
+										<p style="font-size: 12px; margin-left: 15px;" class="mui-ellipsis">军，是公认的世界第一陆军，曾经单独凭陆军,将……</p>
+										<p style="margin-left: 15px;font-size: 10px;color: #000000;">1118&nbsp;赞同&nbsp;&nbsp;203&nbsp;评论&nbsp;&nbsp;昨天&nbsp;07:31</p>
+									</div>
+									<div class="div_channel_talkbox_cenbox" style="margin-top: 15px;">
+										<span style="font-size: 13px;font-weight: 500;margin-left: 15px;">穷则战术穿插，达则给老子炸</span>
+										<p style="font-size: 12px;margin-left: 15px;"><span style="font-weight: 600;font-size: 12px;">每日点兵：</span>在近期西部战区高原演习中，有这样一款装</p>
+										<p style="font-size: 12px; margin-left: 15px;" class="mui-ellipsis">备频繁亮相。它像枪，打出去却会炸；它像炮，却……</p>
+										<div style="margin-bottom: 10px; float: left; width: 60px;height: 22px;background-color:#FFEBCD;text-align: center;line-height: 22px;margin-left: 15px;border-radius: 5px;">
+											<span style="font-size: 10px;color:#FF8C00;">18.1&nbsp;人阅读</span>
+										</div>
+										<span style="float: left;font-size: 10px;margin-left: 15px;">1426&nbsp;赞同&nbsp;&nbsp;06-22</span>
+									</div>
+								</div>
+								<div class="div_channel_talkbox">
+									<ul class="mui-table-view" style="border-radius: 5px;">
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;">
+												<img class="div_channel_talkbox_userhead mui-pull-left" src="User_Head/junshi_head.jpg">
+												<div class="div_User_Box_Rigth">
+													<span style="font-weight: 500;font-size: 20px;color: #007AFF;">+</span><span style="font-weight: 500;color: #007AFF;">&nbsp;&nbsp;关注</span>
+												</div>
+												<div class="mui-media-body">
+													<span style="font-size: 14px;">军事</span>
+													<p style="font-size: 10px;">进一天讨论&nbsp;581</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<div class="div_channel_talkbox_cenbox" style="border-bottom: solid 1px #CCCCCC;">
+										<span style="font-size: 13px;font-weight: 500;margin-left: 15px;">穷则战术穿插，达则给老子炸</span>
+										<p style="font-size: 12px;margin-left: 15px;"><span style="font-weight: 600;font-size: 12px;">一颗青木：</span>作者：远方青木（YFqingmu）中国人民解放</p>
+										<p style="font-size: 12px; margin-left: 15px;" class="mui-ellipsis">军，是公认的世界第一陆军，曾经单独凭陆军,将……</p>
+										<p style="margin-left: 15px;font-size: 10px;color: #000000;">1118&nbsp;赞同&nbsp;&nbsp;203&nbsp;评论&nbsp;&nbsp;昨天&nbsp;07:31</p>
+									</div>
+									<div class="div_channel_talkbox_cenbox" style="margin-top: 15px;">
+										<span style="font-size: 13px;font-weight: 500;margin-left: 15px;">穷则战术穿插，达则给老子炸</span>
+										<p style="font-size: 12px;margin-left: 15px;"><span style="font-weight: 600;font-size: 12px;">每日点兵：</span>在近期西部战区高原演习中，有这样一款装</p>
+										<p style="font-size: 12px; margin-left: 15px;" class="mui-ellipsis">备频繁亮相。它像枪，打出去却会炸；它像炮，却……</p>
+										<div style="margin-bottom: 10px; float: left; width: 60px;height: 22px;background-color:#FFEBCD;text-align: center;line-height: 22px;margin-left: 15px;border-radius: 5px;">
+											<span style="font-size: 10px;color:#FF8C00;">18.1&nbsp;人阅读</span>
+										</div>
+										<span style="float: left;font-size: 10px;margin-left: 15px;">1426&nbsp;赞同&nbsp;&nbsp;06-22</span>
+									</div>
+								</div>
+								<div class="div_channel_talkbox">
+									<ul class="mui-table-view" style="border-radius: 5px;">
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;">
+												<img class="div_channel_talkbox_userhead mui-pull-left" src="User_Head/junshi_head.jpg">
+												<div class="div_User_Box_Rigth">
+													<span style="font-weight: 500;font-size: 20px;color: #007AFF;">+</span><span style="font-weight: 500;color: #007AFF;">&nbsp;&nbsp;关注</span>
+												</div>
+												<div class="mui-media-body">
+													<span style="font-size: 14px;">军事</span>
+													<p style="font-size: 10px;">进一天讨论&nbsp;581</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<div class="div_channel_talkbox_cenbox" style="border-bottom: solid 1px #CCCCCC;">
+										<span style="font-size: 13px;font-weight: 500;margin-left: 15px;">穷则战术穿插，达则给老子炸</span>
+										<p style="font-size: 12px;margin-left: 15px;"><span style="font-weight: 600;font-size: 12px;">一颗青木：</span>作者：远方青木（YFqingmu）中国人民解放</p>
+										<p style="font-size: 12px; margin-left: 15px;" class="mui-ellipsis">军，是公认的世界第一陆军，曾经单独凭陆军,将……</p>
+										<p style="margin-left: 15px;font-size: 10px;color: #000000;">1118&nbsp;赞同&nbsp;&nbsp;203&nbsp;评论&nbsp;&nbsp;昨天&nbsp;07:31</p>
+									</div>
+									<div class="div_channel_talkbox_cenbox" style="margin-top: 15px;">
+										<span style="font-size: 13px;font-weight: 500;margin-left: 15px;">穷则战术穿插，达则给老子炸</span>
+										<p style="font-size: 12px;margin-left: 15px;"><span style="font-weight: 600;font-size: 12px;">每日点兵：</span>在近期西部战区高原演习中，有这样一款装</p>
+										<p style="font-size: 12px; margin-left: 15px;" class="mui-ellipsis">备频繁亮相。它像枪，打出去却会炸；它像炮，却……</p>
+										<div style="margin-bottom: 10px; float: left; width: 60px;height: 22px;background-color:#FFEBCD;text-align: center;line-height: 22px;margin-left: 15px;border-radius: 5px;">
+											<span style="font-size: 10px;color:#FF8C00;">18.1&nbsp;人阅读</span>
+										</div>
+										<span style="float: left;font-size: 10px;margin-left: 15px;">1426&nbsp;赞同&nbsp;&nbsp;06-22</span>
+									</div>
+								</div>
+								<div class="div_channel_talkbox">
+									<ul class="mui-table-view" style="border-radius: 5px;">
+										<li class="mui-table-view-cell mui-media">
+											<a href="javascript:;">
+												<img class="div_channel_talkbox_userhead mui-pull-left" src="User_Head/junshi_head.jpg">
+												<div class="div_User_Box_Rigth">
+													<span style="font-weight: 500;font-size: 20px;color: #007AFF;">+</span><span style="font-weight: 500;color: #007AFF;">&nbsp;&nbsp;关注</span>
+												</div>
+												<div class="mui-media-body">
+													<span style="font-size: 14px;">军事</span>
+													<p style="font-size: 10px;">进一天讨论&nbsp;581</p>
+												</div>
+											</a>
+										</li>
+									</ul>
+									<div class="div_channel_talkbox_cenbox" style="border-bottom: solid 1px #CCCCCC;">
+										<span style="font-size: 13px;font-weight: 500;margin-left: 15px;">穷则战术穿插，达则给老子炸</span>
+										<p style="font-size: 12px;margin-left: 15px;"><span style="font-weight: 600;font-size: 12px;">一颗青木：</span>作者：远方青木（YFqingmu）中国人民解放</p>
+										<p style="font-size: 12px; margin-left: 15px;" class="mui-ellipsis">军，是公认的世界第一陆军，曾经单独凭陆军,将……</p>
+										<p style="margin-left: 15px;font-size: 10px;color: #000000;">1118&nbsp;赞同&nbsp;&nbsp;203&nbsp;评论&nbsp;&nbsp;昨天&nbsp;07:31</p>
+									</div>
+									<div class="div_channel_talkbox_cenbox" style="margin-top: 15px;">
+										<span style="font-size: 13px;font-weight: 500;margin-left: 15px;">穷则战术穿插，达则给老子炸</span>
+										<p style="font-size: 12px;margin-left: 15px;"><span style="font-weight: 600;font-size: 12px;">每日点兵：</span>在近期西部战区高原演习中，有这样一款装</p>
+										<p style="font-size: 12px; margin-left: 15px;" class="mui-ellipsis">备频繁亮相。它像枪，打出去却会炸；它像炮，却……</p>
+										<div style="margin-bottom: 10px; float: left; width: 60px;height: 22px;background-color:#FFEBCD;text-align: center;line-height: 22px;margin-left: 15px;border-radius: 5px;">
+											<span style="font-size: 10px;color:#FF8C00;">18.1&nbsp;人阅读</span>
+										</div>
+										<span style="float: left;font-size: 10px;margin-left: 15px;">1426&nbsp;赞同&nbsp;&nbsp;06-22</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="item3" class="mui-slider-item mui-control-content mui-active">
+						<div class="mui-row" style="margin-top: 10%;">
+								<div class="mui-col-xs-4">
+									<img src="Picture/camera.png" class="div_piceure">
+									<p>数码</p>
+								</div>
+								<div class="mui-col-xs-4">
+									<img src="Picture/Movies.png" class="div_piceure">
+									<p>影视</p>
+								</div>
+								<div class="mui-col-xs-4">
+									<img src="Picture/fasion.png" class="div_piceure">
+									<p>时尚</p>
+								</div>
+							</div>
+							<div class="mui-row" style="margin-top: 20%;">
+								<div class="mui-col-xs-4">
+									<img src="Picture/PE.png" class="div_piceure">
+									<p>体育</p>
+								</div>
+								<div class="mui-col-xs-4">
+									<img src="Picture/Scholl.png" class="div_piceure">
+									<p>教育</p>
+								</div>
+								<div class="mui-col-xs-4">
+									<img src="Picture/Family.png" class="div_piceure">
+									<p>健康</p>
+								</div>
+							</div>
+							<div class="mui-row" style="margin-top: 20%;">
+								<div class="mui-col-xs-4">
+									<img src="./Picture/calendar.png" class="div_piceure">
+									<p>日历</p>
+								</div>
+								<div class="mui-col-xs-4">
+									<img src="Picture/Card%20bag.png" class="div_piceure">
+									<p>卡包</p>
+								</div>
+								<div class="mui-col-xs-4">
+									<img src="Picture/Find.png" class="div_piceure">
+									<p>发现</p>
+								</div>
+							</div>
+							<div class="mui-row" style="margin-top: 20%;">
+								<div class="mui-col-xs-4">
+									<img src="Picture/Red%20envelopes.png" class="div_piceure">
+									<p>红包</p>
+								</div>
+								<div class="mui-col-xs-4">
+									<img src="Picture/Ranking%20List.png" class="div_piceure">
+									<p>排行榜</p>
+								</div>
+								<div class="mui-col-xs-4">
+									<img src="Picture/Topic%20of%20conversation.png" class="div_piceure">
+									<p>话题</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.init({
+				pullRefresh:{
+					container:"#refreshContainer",
+					down:{
+						height : 100,//可选,默认50.触发下拉刷新拖动距离,
+						range : 100, //可选 默认100px,控件可下拉拖拽的范围
+						color : '#2BD009', //可选，默认“#2BD009” 下拉刷新控件颜色
+						style : 'circle',//可选，下拉刷新样式，目前支持原生5+ ‘circle’ 样式
+						auto : false,//可选,默认false.自动下拉刷新一次
+						callback:doubleref
+					},
+				}
+			});
+			function doubleref()
+			{
+				mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+			}
+			var content_div = document.getElementById('content_div');
+			mui.plusReady(function(){
+				content_div.style.marginTop = Math.round(plus.navigator.getStatusbarHeight()) + 10 + 'px';
+			});
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,354 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style>
+			.div_top_box
+			{
+				width: 100%;
+				height: auto;
+				background-color:#007AFF;
+				border-bottom-left-radius: 80px;
+				border-bottom-right-radius: 80px;
+				float: left;
+			}
+			.div_box_top_function_s_s_s
+			{
+				width: 96%;
+				height: 35px;
+				margin-left: 2%;
+				margin-right: 2%;
+				float: left;
+			}
+			.div_top_box_search
+			{
+				width: 70%;
+				height: auto;
+				float: left;
+			}
+			.div_top_box_scanning
+			{
+				margin-left: 0px;
+				width: 35px;
+				height: 35px;
+				float: right;
+				max-width: 100%;
+			}
+			.div_top_box_set
+			{
+				margin-left: 8px;
+				width: 35px;
+				height: 35px;
+				float: right;
+				max-width: 100%;
+			}
+			.div_top_user_data
+			{
+				width: 90%;
+				height: 150px;
+				margin-left: 5%;
+				margin-right: 5%;
+				margin-top: 10px;
+				background-color: white;
+				border-radius: 10px;
+				float: left;
+			}
+			.div_top_user_data_userhead
+			{
+				height: 70px;
+				width: 70px;
+				margin: 15px;
+				float: left;
+			}
+			.div_top_user_data_index
+			{
+				margin-top: 30px;
+				width: auto;
+				height: auto;
+				float: left;
+			}
+			.div_top_user_data_username
+			{
+				width: auto;
+				height: auto;
+				margin-bottom: 1%;
+			}
+			.div_top_user_data_saltindex
+			{
+				width: auto;
+				height: 15px;
+				text-align: left;
+				background-color:#87CEFA;
+				border-radius: 10px;
+				float: left;
+			}
+			.saltindex_picturesize
+			{
+				width: 15px;
+				height: 15px;
+				max-width: 100%;
+				float: left;
+			}
+			.div_top_user_home
+			{
+				margin-top: 40px;
+				width: auto;
+				height: 20px;
+				float: right;
+				line-height:20px;
+			}
+			.div_top_user_mesfucntion
+			{
+				width: 100%;
+				height: auto;
+				float: left;
+			}
+			.div_top_user_mesfucntion_creation
+			{
+				width: 25%;
+				height: 30px;
+				border-right:1px solid #C0C0C0;
+				float: left;
+			}
+			.div_top_user_mesfucntion_bottom
+			{
+				width: 100%;
+				height: auto;
+				float: left;
+			}
+			.div_top_user_mesfucntion_creation_bottom
+			{
+				width: 25%;
+				height: 20px;
+				float: left;
+			}
+			.div_center_function_box
+			{
+				width: 100%;
+				height: auto;
+				margin-top: 15px;
+				background-color: white;
+				float: left;
+				border-radius: 20px;
+			}
+			.div_center_function_picturesize
+			{
+				margin-top: 25px;
+				width: 35px;
+				height: 35px;
+				max-width: 100%;
+			}
+			.div-center_function_p_fontsize
+			{
+				font-size: 12px;
+			}
+			.div_box_card
+			{
+				width: 100%;
+				height: 160px;
+				float: left;
+				margin-top: 10px;
+				background-color: white;
+				border-radius: 20px;
+			}
+			.div_box_card_div_zindex_one
+			{
+				position: absolute;
+				width: 80%;
+				height: 100px;
+				left: 10%;
+				box-shadow: 1px 1px 1px 1px #888888;
+				background-color: white;
+				border-radius: 15px;
+				z-index: 2;
+			}
+			.div_box_card_div_zindex_two
+			{
+				position: absolute;
+				width: 77%;
+				height: 100px;
+				margin-top: 7px;
+				left: 12%;
+				box-shadow:1px 1px #888888;
+				border-radius: 15px;
+				z-index: 1;
+			}
+			.div_box_div_zindex_one_bottom_style
+			{
+				width: 100%;
+				margin-top: 30px;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mui-content">
+			<div class="div_top_box" id="heardermylab">
+				<div class="div_box_top_function_s_s_s">
+					<div class="div_top_box_search">
+						<div class="mui-input-row mui-search">
+							<input type="search" class="mui-input-clear" placeholder="搜索知乎内容">
+						</div>
+					</div>
+					<img src="Picture/SZ.png" class="div_top_box_set"/>
+					<img src="Picture/SM.png" class="div_top_box_scanning"/>
+				</div>
+				<div class="div_top_user_data">
+					<div class="div_top_user_data_userhead">
+						<img src="Picture/user_head.jpg" style="max-width: 100%;border-radius: 50px;"/>
+					</div>
+					<div class="div_top_user_data_index">
+						<div class="div_top_user_data_username">
+							<span style="font-size: 14px;">买菜必涨价</span>
+						</div>
+						<div class="div_top_user_data_saltindex">
+							<img src="Picture/love.png" class="saltindex_picturesize"/>
+							<div style="font-size: 10px; float: left; line-height: 15px;">知乎盐值：299&nbsp;&nbsp;>&nbsp;</div>
+						</div>
+					</div>
+					<div class="div_top_user_home">
+						<p>个人主页 >&nbsp;&nbsp;&nbsp;</p>
+					</div>
+					<div class="div_top_user_mesfucntion">
+						<div class="div_top_user_mesfucntion_creation">
+							<p style="text-align: center; line-height:30px; font-size: 13px; color: #DD524D;">未开通</p>
+						</div>
+						<div class="div_top_user_mesfucntion_creation">
+							<p style="text-align: center; line-height:30px;">1</p>
+						</div>
+						<div class="div_top_user_mesfucntion_creation">
+							<p style="text-align: center; line-height:30px;">2</p>
+						</div>
+						<div style="width: 25%;height: 30px;float: left;">
+							<p style="text-align: center; line-height:30px;">2</p>
+						</div>
+					</div>
+					<div class="div_top_user_mesfucntion_bottom">
+						<div class="div_top_user_mesfucntion_creation_bottom">
+							<p style="text-align: center; line-height:20px;font-size: 13px;">创作中心</p>
+						</div>
+						<div class="div_top_user_mesfucntion_creation_bottom">
+							<p style="text-align: center; line-height:20px;font-size: 13px;">关注</p>
+						</div>
+						<div class="div_top_user_mesfucntion_creation_bottom">
+							<p style="text-align: center; line-height:20px;font-size: 13px;">收藏夹</p>
+						</div>
+						<div class="div_top_user_mesfucntion_creation_bottom">
+							<p style="text-align: center; line-height:20px;font-size: 13px;">最近浏览</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div_center_function_box">
+				<div class="mui-row" style="text-align: center;">
+					<div class="mui-col-xs-3">
+						<img src="Picture/Study_Message.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">学习记录</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/Byde.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">已购</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/Quan.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">余额礼券</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/Study_Card.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">读书卡</p>
+					</div>
+				</div>
+				<div class="mui-row" style="text-align: center;">
+					<div class="mui-col-xs-3">
+						<img src="Picture/Book_Yard.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">我的书架</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/Download.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">下载中心</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/Money_Talk.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">付费咨询</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/Activey.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">活动广场</p>
+					</div>
+				</div>
+			</div> 
+			<div class="div_center_function_box">
+				<div class="mui-row" style="text-align: center;">
+					<div class="mui-col-xs-3">
+						<img src="Picture/Community.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">社区建设</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/Help.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">反馈与帮助</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/People.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">众裁议事厅</p>
+					</div>
+					<div class="mui-col-xs-3">
+						<img src="Picture/Night.png" class="div_center_function_picturesize"/>
+						<p class="div-center_function_p_fontsize">夜间模式</p>
+					</div>
+				</div>
+			</div>
+			<div class="mui-row">
+				<div class="mui-col-xs-6" style="margin-top: 10px;">
+					<span style="font-weight: 600;margin-left: 10px;">我的卡片</span>
+				</div>
+				<div class="mui-col-xs-6" style="text-align: right;margin-top: 10px;">
+					<span style="color:	#00BFFF;font-size: 18px;">+</span><span style="color:#00BFFF; margin-left: 8px;font-weight: 500;margin-right: 10px;">管理卡片</span>
+				</div>
+			</div>
+			<div class="div_box_card">
+				<div class="mui-row" style="margin-top: 8px;">
+					<div class="mui-col-xs-6">
+						<span style="font-size: 16px;margin-left: 5px;">回答问题</span>
+					</div>
+					<div class="mui-col-xs-6" style="text-align: right;">
+						<p style="margin-right: 5px;">更多提问&nbsp;&nbsp;></p>
+					</div>
+				</div>
+				<div class="div_box_card_div_zindex_one">
+					<p style="font-weight: 600;color: #000000;margin: 15px;">高一下学期努力会不会很晚？</p>
+					<div class="div_box_div_zindex_one_bottom_style">
+						<span style="font-size: 12px;color:#C8C7CC;margin-left: 15px;">1.2&nbsp;关注</span>
+						<div style="float: right;width: 50px;text-align: center;background-color:#E1FFFF;margin-right: 10px;border-radius: 5px;margin-left: 10px;">
+							<span style="font-size: 12px;font-weight: 600;color:#00BFFF;">回答</span>
+						</div>
+						<div style="float: right;width: 50px;text-align: center;background-color:#DCDCDC;border-radius: 5px;">
+							<span style="font-size: 12px;font-weight: 600;">忽略</span>
+						</div>
+					</div>
+				</div>
+				<div class="div_box_card_div_zindex_two">
+					
+				</div>
+			</div>
+		</div>
+		<script src="js/mui.js"></script>
+		<script type="text/javascript">
+			mui.plusReady(function () 
+			{ 			
+				var topoffset = '45px';			
+				var header = document.getElementById('heardermylab');		
+				if(plus.navigator.isImmersedStatusbar())
+				{	
+					topoffset = (Math.round(plus.navigator.getStatusbarHeight())+50);			
+					header.style.paddingTop=(topoffset-45)+'px';			
+				}
+				plus.navigator.setStatusBarStyle('dark');
+			});
+		</script>
+	</body>
+
+</html>

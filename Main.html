@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.css" rel="stylesheet" />
+		<style>
+			* { touch-action: none; } 
+			.div_top_Icon_left
+			{
+				margin-top: 4px;
+				width: 35px;
+				height: 35px;
+				float: left;
+			}
+			.div_top_Icon_right
+			{
+				margin-top: 5px;
+				width: 30px;
+				height: 30px;
+				float: right;
+			}
+			.div_top_search
+			{
+				text-align: center;
+				float: left;
+				width: 75%;
+				margin-left: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav" id="heardermylab">
+			<img src="Picture/camera.png" class="div_top_Icon_left" style="max-width: 100%;"/>
+			<div class="div_top_search">
+				<div class="mui-input-row mui-search">
+					<input type="search" class="mui-input-clear" placeholder="">
+				</div>
+			</div>
+			<img src="Picture/Add.png" class="div_top_Icon_right"/>
+		</header>
+		<div class="mui-content" id="div_content">
+			<div class="mui-segmented-control">
+				<a class="mui-control-item mui-active" data-href="Follow.html">关注</a>
+				<a class="mui-control-item" data-href="Recommend.html">推荐</a>
+				<a class="mui-control-item" data-href="Hot_List.html">热榜</a>
+			</div>
+		</div>
+		<script src="js/mui.js"></script>
+		<script>
+			var topoffset = '45px';
+			var header = document.getElementById('heardermylab');
+			var div_content_header = document.getElementById('div_content');
+			mui.plusReady(function () 
+			{
+				if(plus.navigator.isImmersedStatusbar())
+				{
+					topoffset = (Math.round(plus.navigator.getStatusbarHeight()) + 45);
+					header.style.height = topoffset + 'px';
+					header.style.paddingTop = (topoffset - 45) + 'px';
+					div_content_header.style.paddingTop = topoffset + 'px';
+					plus.navigator.setStatusBarStyle('dark');
+				}
+				var main = plus.webview.currentWebview();
+				var sub_pages = ["Follow.html", "Recommend.html","Hot_List.html"];
+				var sub_styles = 
+				{
+					top: div_content_header.offsetHeight,
+					bottom: "0px",
+				};
+				for (var i = 0; i < sub_pages.length; i++)
+				{
+					var sub = plus.webview.create(sub_pages[i], sub_pages[i], sub_styles);
+					if (i > 0)
+					{
+						sub.hide();
+					}
+					main.append(sub);
+				}
+				var active_tab = sub_pages[0];
+				var tabs = document.querySelectorAll(".mui-control-item");
+				for (var j = 0; j < tabs.length; j++)
+				{
+					tabs[j].addEventListener("tap", function(){
+					var target_tab = this.getAttribute("data-href");
+					if (active_tab == target_tab) 
+					{
+						return;
+					}
+					plus.webview.show(target_tab);
+					plus.webview.hide(active_tab);
+					active_tab = target_tab;
+					});
+				}
+			});
+	</script>
+	</body>
+
+</html>

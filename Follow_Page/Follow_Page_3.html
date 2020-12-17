@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.css" rel="stylesheet" />
+		<script src="../js/mui.js"></script>
+		<style>
+			/* * { touch-action: none; } */
+			 html,body{
+				padding: 0px;
+				margin: 0px;
+				width: 100%;
+				height: 100%;
+			 }
+			.mui-bar-nav 
+			{
+				-webkit-box-shadow: none;
+				box-shadow: none;
+			}
+			.div_top_right_icon_box
+			{
+				width: auto;
+				float: right;
+			}
+			.div_Invitation_box_half_left .span{
+				color: #007AFF;
+			}
+			.div_top_right_icon_box_icon_Style
+			{
+				margin-top: 5px;
+				width: 35px;
+				height: 35px;
+				float: right;
+				max-width: 100%;
+			}
+			.div_problem_box
+			{
+				width: 100%;
+				float: left;
+				margin-top: 30px;
+			}
+			.div_Invitation_box_half_left
+			{
+				width: 100%;
+				display: flex;
+				justify-content: center;
+			}
+			.div_User_Box_Rigth
+			{
+				float: right;
+				margin-top: 5px;
+				background-color: #DDDDDD;
+				width: 70px;
+				height: 30px;
+				border-radius: 5px;
+				text-align: center;
+				line-height: 30px;
+			}
+			.mui-table-view:after{ height:0}
+			.mui-table-view:before{ height:0}
+			.div_buttom_fix
+			{
+				height: 61px;
+				width: 100%;
+				position: fixed;
+				bottom: 0;
+				border-top: 1px solid #BBBBBB;
+				background-color: #F7F7F8;
+				z-index: 10;
+			}
+			.div_buttom_fix_left
+			{
+				height: 40px;
+				width: auto;
+				float: left;
+				margin-top: 10px;
+			}
+			.div_buttom_fix_left_up
+			{
+				text-align: center;
+				width: auto;
+				line-height: 40px;
+				height: auto;
+				float: left;
+				margin-left: 10px;
+				background-color: #ADD8E6;
+				border-radius: 20px;
+			}
+			.div_buttom_fix_right
+			{
+				height: 40px;
+				float: right;
+				width: auto;
+				margin-top: 10px;
+				text-align: center;
+			}
+			.content.mui-content
+			{
+				width: 100%;
+				padding: 0px;
+			}
+			.img{
+				width: 20px;
+				height: 20px;
+				margin: 0px;
+			}
+			.invitation{
+				width: 100%;
+				padding: 2px;
+				display: flex;
+			}
+			.invitation img{
+				width: 20px;
+				height: 20px;
+				margin-right: 5px;
+			}
+			.public{
+				color: #007AFF;
+				height: 40px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: 1px solid #BBBBBB;
+				width: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header mui-bar mui-bar-nav" id="heardermylab">
+			<a class=" mui-action-back mui-icon mui-pull-left"><span style="font-size: 16px;"><img src="../Picture/Left.png"
+					 style="max-width: 100%;width: 30px;height: 30px;" /></span></a>
+			<div class="div_top_right_icon_box">
+				<img src="../Picture/More.png" style="margin-left: 10px;" class="div_top_right_icon_box_icon_Style" />
+				<img src="../Picture/search.png" class="div_top_right_icon_box_icon_Style" />
+			</div>
+		</header>
+		<div class="content mui-content">
+			<div class="mui-scroll-wrapper" id="div_p_top">
+				<div class="mui-scroll">
+					<div class="div_problem_box">
+						<p style="font-size: 24px;color: #000000; margin-bottom: 30px;">有哪些让你有感触的历史人物？</p>
+						<p style="font-size: 16px;">查看全部 5,528 个回答&nbsp;&nbsp;></p>
+					</div>
+					<div class="invitation">
+						<div class="left public">
+							<img src="../Picture/Invitation_to_talk.png">
+							<span>邀请回答</span>
+						</div>
+						<div class="right public">
+							<img src="../Picture/Write_Talk.png">
+							<span>邀请回答</span>
+						</div>
+					</div>
+					<div class="div_User_Box" id="div_user_box">
+						<ul class="mui-table-view" style="margin-top: 5px;">
+							<li class="mui-table-view-cell mui-media">
+								<a href="javascript:;">
+									<img class="mui-media-object mui-pull-left" src="../User_Head/User_3.jpeg" style="border-radius: 25px;">
+									<div class="div_User_Box_Rigth">
+										<span style="font-weight: 500;font-size: 20px;color: #007AFF;">+</span><span style="font-weight: 500;color: #007AFF;">&nbsp;&nbsp;关注</span>
+									</div>
+									<div class="mui-media-body">
+										<span style="font-weight: 800;">铁木君</span>
+										<p>知乎&nbsp;官方账号</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div id="p">
+						<div>
+							因为精神抑郁的关系，
+							
+							家里托人给我在娱乐镇上找了一份老师的工作。
+							
+							刚下火车，
+							
+							映入眼帘的就是巨大的广告牌子：
+							
+							欢迎光临娱乐镇。
+						</div>
+						<br />
+						<div>
+							“小哥哥，小哥哥，我能用树叶换你的笔记本吗？”
+							
+							还没等我反应过来，
+							
+							一个眼睛大大的姑娘把一把树叶扔到了我的脸上，
+							
+							然后抓起我的电脑包就跑。
+							
+
+						</div>
+						<br />
+						<div>
+等我摁住姑娘时，一个拿着手机的男人拦住了我，周围的人都围了上来。“给人放了！你干什么呢？”“她抢我电脑！”“她抢你电脑？你电脑不在你手上吗？人家拍短视频呢，你懂不懂事啊，真不是个男人！”男人骂完我就走了，他的手机开着直播。直播的评论里，都是喝彩和打赏的声音。
+						</div>
+						<br />
+						<div>
+我问学生们，
+
+他们以后想当什么？
+
+大家不约而同的说了同一个词：
+
+网红。						</div>
+						<br />
+						<div>
+上课时，我在讲正弦函数，底下所有的学生都在看着手机。突然一个男生举手了，说：“老师，我请假，你讲的太没意思了！”全班都开始笑，大家都拿出了手机发视频。我问他，讲什么有意思。他说，他要学怎么挣钱，学怎么谈恋爱，学怎么过自己的生活。他说这才是人生真正应该学的。他说完话，全班都是一片叫好的声音。这欢呼声，淹没了正在试图讲道理的我。
+						</div>
+						<br />
+						<div>
+有学生把我上课时辩解的样子发到了网上，做成了恶搞视频。我把他叫到办公室，告诉他这样不好，侵犯了我的个人隐私，问他可不可以删了。第二天，他讲了他被我用权威强迫删视频的故事，他没有屈服，他制作了更多关于我的恶搞视频。网站上都是支持他的帖子和留言，叙述着学校乱收费和违规补课。我匿名发了一句：“其实老师也是有自己权利的，这样不太好吧。”却被追着骂了一个晚上。“学校违规补课你不说，学生玩个梗你倒是没完了！”
+
+</div>
+						<br />
+						<div>
+校长找到我，说你似乎不太适应这里啊。给我放两天假，叫我出去走走。可我无论走到哪里都是一样的，所有人都是一样的装扮，重复着一遍又一遍莫名其妙的小短剧。我打开了娱乐镇的地方新闻，里面全部都是网红和明星的故事，他和她分手了，他和她在一起了，她辍学为他生了孩子。他们都是成功人士。他们幸福快乐。
+</div>
+						<br />
+						<div>
+							我走去了娱乐镇的中心大楼。
+							
+							里面镇长正在进行着个人表演，
+							
+							扭着腰，
+							
+							脱着衣服。
+							
+							偌大的礼堂里只有前排有几个狂热呐喊的小姑娘，
+							
+							剩下的都是摄像机和手机。
+							
+							为了自己之后的道路，
+							
+							镇长需要更好的数据，
+							
+							更好的流量
+							
+							更多的转发和点赞次数。
+						</div>
+						<br />
+						<div>
+							我有些饿了，
+							
+							想着在路边吃一碗拉面就离开这里罢。
+							
+							可是整个城市里却只有各种各样的网红小吃和网红饭店。
+							
+							我排了一个小时的队，
+							
+							花了半个月的工资，
+							
+							买了一个一天只卖三十个的马叔叔网红爆浆芝士手工鸡蛋灌饼。
+							
+							三口就吃完了，
+							
+							我有点怀念小时候家门口的早点摊了。
+						</div>
+						<br />
+						<div>
+							在火车站，售票员问我你要去哪。我说，我要去一个大家好好说话的地方，那里有娱乐，但不是仅仅有娱乐。在那里每个人都有着作为人的尊严。售票员笑了，笑着笑着就发出了猪一样的叫声。ta说，哪有这样的地方啊？您别是精神病院跑出来的吧？我说，那我要回家，回到我来的地方。售票员看着我的身份证，说，您就是这的人啊。您的家就在这里。
+							
+						</div>
+						<br />
+						<div>
+							我和大夫说，
+							
+							我要回我来的地方。
+							
+							大夫讲了一个网上流传了好几年的笑话，
+							
+							然后开怀大笑。
+							
+							边笑边说，
+							
+							你刚刚出院，
+							
+							为什么要回来呢？
+							
+							我也笑了，
+							
+							说：
+							
+							我觉得我还没有被治好。
+							
+							我还不是一个正常人。
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="div_buttom_fix" id="div_buttom_fix">
+				<div class="div_buttom_fix_left">
+					<div class="div_buttom_fix_left_up">
+						<span style="color: #007AFF;margin-left: 15px;">▲</span><span style="font-size: 14px;color: #007AFF;margin-left: 10px;">赞同&nbsp;2万</span>
+						<span style="color: #00BFFF;">│</span><span style="color: #007AFF;margin-left: 6px;margin-right: 10px;">▼</span>
+					</div>
+				</div>
+				<div class="div_buttom_fix_right">
+					<div class="mui-row">
+						<div class="mui-col-xs-4" style="width: 60px;">
+							<img src="../Picture/User_Like.png" style="width: 25px;height: 25px;" />
+						</div>
+						<div class="mui-col-xs-4" style="width: 60px;">
+							<img src="../Picture/User_Collection.png" style="width: 25px;height: 25px;" />
+						</div>
+						<div class="mui-col-xs-4" style="width: 60px;">
+							<img src="../Picture/User_Talk.png" style="width: 25px;height: 25px;" />
+						</div>
+					</div>
+					<div class="mui-row">
+						<div class="mui-col-xs-4">
+							<span style="font-size: 10px;">喜欢2500</span>
+						</div>
+						<div class="mui-col-xs-4">
+							<span style="font-size: 10px;">收藏5800</span>
+						</div>
+						<div class="mui-col-xs-4">
+							<span style="font-size: 10px;">评论500</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		mui.init({
+			// gestureConfig: {
+			// 	tap: true, //默认为true
+			// 	doubletap: true, //默认为false
+			// 	longtap: true, //默认为false
+			// 	swipe: true, //默认为true
+			// 	drag: true, //默认为true
+			// 	hold: false, //默认为false，不监听
+			// 	release: false //默认为false，不监听
+			// }
+		});
+		mui.plusReady(function() {
+			var height = Math.round(plus.navigator.getStatusbarHeight());
+			var header = document.getElementById('heardermylab');
+			var div_p_top = document.getElementById('div_p_top');
+			var div_buttom_fix = document.getElementById('div_buttom_fix');
+			var div = document.getElementById('div_user_box');
+			var p = document.getElementById('p');
+			if (plus.navigator.isImmersedStatusbar()) {
+				header.style.marginTop = (Math.round(plus.navigator.getStatusbarHeight())) + 'px';
+				div_p_top.style.marginTop = header.offsetHeight + height + 'px';
+				plus.navigator.setStatusBarStyle('dark');
+			}
+			var scroll = mui('.mui-scroll-wrapper').scroll();
+			document.querySelector('.mui-scroll-wrapper').addEventListener('swipeup', function() {
+				div_buttom_fix.classList.add('mui-hidden');
+			});
+			document.querySelector('.mui-scroll-wrapper').addEventListener('swipedown', function() {
+				div_buttom_fix.classList.remove('mui-hidden');
+			});
+		});
+	</script>
+</html>
